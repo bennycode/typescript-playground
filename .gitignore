@@ -1,6 +1,7 @@
 # Target directories
 /node_modules/
 /npm-debug.log
+/.tscache
 
 # IntelliJ
 # http://devnet.jetbrains.com/docs/DOC-1186
