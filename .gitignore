@@ -26,4 +26,4 @@
 /.tscache
 *.tmp.txt
 **/*/.baseDir.ts
-/target
+/app/public/js
