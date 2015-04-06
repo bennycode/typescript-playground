@@ -8,10 +8,10 @@ module.exports = function (grunt) {
     watch: require('./config/watch.js'),
     pkg: grunt.file.readJSON('package.json'),
     port: {
-      connect: 8888,
-      livereload: 36963
+      webServer: 8888,
+      liveReload: 36963
     }
   });
 
-  grunt.registerTask('default', ['ts', 'connect', 'open:public', 'watch:public']);
+  grunt.registerTask('default', ['connect', 'open:public', 'watch:typescript']);
 };

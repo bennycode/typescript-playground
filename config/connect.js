@@ -4,7 +4,7 @@ module.exports = {
     options: {
       base: '.',
       hostname: '*',
-      port: '<%= port.connect %>'
+      port: '<%= port.webServer %>'
     }
   }
 };
