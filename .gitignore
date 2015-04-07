@@ -25,5 +25,5 @@
 /npm-debug.log
 /.tscache
 *.tmp.txt
-**/*/.baseDir.ts
+*.baseDir.ts
 /app/public/js
