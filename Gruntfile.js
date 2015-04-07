@@ -1,21 +1,17 @@
 module.exports = function (grunt) {
-  require("load-grunt-tasks")(grunt, {
-    pattern: ["grunt-*", "!grunt-template-jasmine-istanbul"]
-  });
+  require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
-    // Tasks
-    ts: require("./config/ts.js"),
-    // Settings
-    pkg: grunt.file.readJSON("package.json")
+    ts: require('./config/ts.js'),
+    connect: require('./config/connect.js'),
+    open: require('./config/open.js'),
+    watch: require('./config/watch.js'),
+    pkg: grunt.file.readJSON('package.json'),
+    port: {
+      webServer: 8888,
+      liveReload: 36963
+    }
   });
 
-  /* Self Test */
-  grunt.registerTask("app-self-test", function () {
-    var pkg = grunt.file.readJSON("package.json");
-    return grunt.log.writeln("Grunt works. Module: " + pkg.name);
-  });
-
-  /* Default */
-  grunt.registerTask("default", ["ts"]);
+  grunt.registerTask('default', ['connect', 'open:public', 'watch:typescript']);
 };

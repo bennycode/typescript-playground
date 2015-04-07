@@ -8,9 +8,7 @@ module.exports = {
     target: "es5"
   },
   default: {
-    html: ["app/**/**.tpl.html"],
-    outDir: "target/js",
-    src: ["app/**/*.ts"],
-    watch: "app"
+    outDir: "app/public/js",
+    src: ["app/code/**/*.ts"]
   }
 };
