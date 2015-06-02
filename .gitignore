@@ -1,29 +1,14 @@
 # IntelliJ
 # http://devnet.jetbrains.com/docs/DOC-1186
-/.idea/codeStyleSettings.xml
-/.idea/encodings.xml
-/.idea/tasks.xml
-/.idea/workspace.xml
-/.idea/inspectionProfiles/
-/.idea/temp/
+/.idea/**/*.xml
+!/.idea/codeStyleSettings.xml
 
-# OSX
-# Created by https://www.gitignore.io
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+# TypeScript
+/.tscache/
+*.tmp.txt
+/src/**/*.js
+/src/**/*.js.map
 
-# Target directories & temp files
+# Node
 /node_modules/
 /npm-debug.log
-/.tscache
-*.tmp.txt
-*.baseDir.ts
-/app/public/js
