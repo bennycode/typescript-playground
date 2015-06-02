@@ -3,24 +3,10 @@
 /.idea/**/*.xml
 !/.idea/codeStyleSettings.xml
 
+# TypeScript
+/.tscache/
+*.tmp.txt
 
-# OSX
-# Created by https://www.gitignore.io
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Target directories & temp files
+# Node
 /node_modules/
 /npm-debug.log
-/.tscache
-*.tmp.txt
-*.baseDir.ts
-/app/public/js
