@@ -1,11 +1,8 @@
 # IntelliJ
 # http://devnet.jetbrains.com/docs/DOC-1186
-/.idea/codeStyleSettings.xml
-/.idea/encodings.xml
-/.idea/tasks.xml
-/.idea/workspace.xml
-/.idea/inspectionProfiles/
-/.idea/temp/
+/.idea/**/*.xml
+!/.idea/codeStyleSettings.xml
+
 
 # OSX
 # Created by https://www.gitignore.io
