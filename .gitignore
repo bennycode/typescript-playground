@@ -6,6 +6,8 @@
 # TypeScript
 /.tscache/
 *.tmp.txt
+/src/**/*.js
+/src/**/*.js.map
 
 # Node
 /node_modules/
